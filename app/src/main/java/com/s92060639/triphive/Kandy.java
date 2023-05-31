@@ -1,0 +1,69 @@
+package com.s92060639.triphive;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class Kandy extends Fragment {
+    Button goToDistrictsFragmentBtn;
+
+    public Kandy() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_kandy, container, false);
+
+        //        Go to Kandy Lake
+        goToDistrictsFragmentBtn = view.findViewById(R.id.kandyLake);
+        goToDistrictsFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment fragment = new KandyLake();
+                FragmentTransaction transaction = getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction();
+                transaction.replace(R.id.fram_layout, fragment)
+                        .addToBackStack("name")
+                        .commit();
+            }
+
+        });
+
+        //        Go to Temple Of Tooth Relic
+        goToDistrictsFragmentBtn = view.findViewById(R.id.toothRelic);
+        goToDistrictsFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment fragment = new KandyLake();
+                FragmentTransaction transaction = getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction();
+                transaction.replace(R.id.fram_layout, fragment)
+                        .addToBackStack("name")
+                        .commit();
+            }
+
+        });
+
+        return view;
+    }
+}

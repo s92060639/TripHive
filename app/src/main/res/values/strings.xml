@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TripHive</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="signup">Register</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="can_not_cr">Can not create new account</string>
+    <string name="invalid_acc">Invalid account. Check again</string>
+    <string name="username_exs">User name already exists. Check again</string>
+    <string name="change_pro">Change Profile</string>
+    <string name="title_activity_live_track">LiveTrackActivity</string>
+
+</resources>
